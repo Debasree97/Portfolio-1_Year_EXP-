@@ -1,7 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
+/* 
 :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
@@ -24,4 +24,17 @@ body {
       rgb(var(--background-end-rgb))
     )
     rgb(var(--background-start-rgb));
+} */
+
+.animation {
+  animation: 5s ease-in-out forwards;
+  @keyframes ease-in-out {
+    0% {
+      transform: translateX(-100%); /* or opacity: 0; */
+    }
+
+    100% {
+      transform: translateX(0); /* or opacity: 1; */
+    }
+  }
 }
